@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
-# 思路：正序遍历是暴力破解，复杂度是O（n**3）。倒序法：在[0, n]间遍历j，通过一定的方法选出i，使得[i, j]是从j向前数过程中最长的不连续字符串区间。j - i + 1就是在j下最长不连续字符串的长度。
-# 从0到n遍历j，即可找到最长的长度。该算法复杂度为O(n)
+# 思路：正序遍历是暴力破解，复杂度是O（n**3）。倒序法：在[0, n]间遍历j，通过一定的方法选出i，使得[i, j]是从j向前数过程中最长的不连续字符串区间。
+# j - i + 1就是在j下最长不连续字符串的长度。从0到n遍历j，即可找到最长的长度。该算法复杂度为O(n)
 
 # 下面举两个例子说明如何确定i复杂度最低: 1. s = 'abcbb', 2. s = 'abcba' [注释按顺序阅读]
 def lengthOfLongestSubstring(self, s):
